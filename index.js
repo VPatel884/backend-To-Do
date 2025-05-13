@@ -10,7 +10,7 @@ app.use(cors());
 initializeDatabase();
 
 app.use(express.json());
-app.use('/api/todos', todoRoutes);
+app.use('/todos', todoRoutes);
 
 const PORT = process.env.PORT || 5000;
 
